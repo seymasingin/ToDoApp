@@ -39,7 +39,7 @@ class TodoAdapter(): RecyclerView.Adapter<TodoAdapter.CardHolder>() {
                     when (todo.priority) {
                         "High" -> cardView.setCardBackgroundColor(Color.RED)
                         "Medium" -> cardView.setCardBackgroundColor(Color.BLUE)
-                        "Low" -> cardView.setCardBackgroundColor(Color.YELLOW)
+                        "Low" -> cardView.setCardBackgroundColor(Color.GREEN)
                         else -> cardView.setCardBackgroundColor(Color.WHITE)
                     }
             }

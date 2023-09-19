@@ -30,7 +30,7 @@
                 android:text="TextView"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/todoPriorityText"
+                app:layout_constraintBottom_toTopOf="@+id/a"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.5" />
@@ -46,16 +46,26 @@
                 app:layout_constraintVertical_bias="0.5" />
 
             <TextView
-                android:id="@+id/todoPriorityText"
+                android:id="@+id/a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
-                android:text="TextView"
+                android:text="Priority:"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/todoText"
                 app:layout_constraintTop_toBottomOf="@+id/todoText"
                 app:layout_constraintVertical_bias="0.5" />
+
+            <TextView
+                android:id="@+id/todoPriorityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginBottom="16dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/a" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
